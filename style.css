@@ -1,0 +1,8 @@
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:sans-serif;background:#f5f5f7;padding:10px}
+header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:15px;background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.actions{display:flex;gap:8px;flex-wrap:wrap}input,select,button{padding:8px 12px;border-radius:8px;border:1px solid #ddd}
+.tabs{display:flex;gap:8px;margin:15px 0;flex-wrap:wrap}.tab{cursor:pointer;background:#fff}.tab.active{background:#000;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}.card{background:#fff;border-radius:16px;padding:12px;box-shadow:0 4px 20px rgba(0,0,0,.07);text-align:center}.card img{width:100%;height:140px;object-fit:contain}
+.skeleton{height:220px;background:linear-gradient(90deg,#eee 25%,#ddd 50%,#eee 75%);background-size:200% 100%;animation:load 1.2s infinite}@keyframes load{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center}.modal-box{background:#fff;padding:20px;border-radius:12px;display:flex;flex-direction:column;gap:10px}
+.drawer{position:fixed;right:0;top:0;width:300px;height:100%;background:#fff;padding:20px;box-shadow:-4px 0 20px rgba(0,0,0,.2)}.hidden{display:none}.error{background:#ffd6d6;padding:10px;border-radius:8px;margin:10px 0}.small{font-size:12px;color:#666}
