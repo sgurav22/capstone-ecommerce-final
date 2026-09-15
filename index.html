@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopEase - Capstone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>ShopEase</h1>
+  <div class="actions">
+    <input type="text" id="search" placeholder="Search products...">
+    <select id="sort"><option value="default">Sort</option><option value="low-high">Low to High</option><option value="high-low">High to Low</option></select>
+    <button id="loginBtn">Login</button>
+    <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+  </div>
+</header>
+<div id="tabs" class="tabs"></div>
+<div id="error" class="error hidden"></div>
+<main id="grid" class="grid"></main>
+<div id="skeleton" class="grid"></div>
+
+<div id="authModal" class="modal hidden">
+  <div class="modal-box">
+    <h3>Login Simulation</h3>
+    <input id="emailInput" placeholder="Enter email (e.g. saloni@test.com)">
+    <button id="doLogin">Login</button>
+    <button id="closeModal">Cancel</button>
+    <p id="userStatus"></p>
+  </div>
+</div>
+
+<div id="cartDrawer" class="drawer hidden">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  <button id="closeCart">Close</button>
+  <button id="checkout">Checkout</button>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
